@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Contact</string>
+    <string name="my_number">My Number</string>
+    <string name="name">Name</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="message">Message</string>
+    <string name="voice_call">Voice Call</string>
+    <string name="video_call">Video Call</string>
+    <string name="share_contact">Share Contact</string>
+    <string name="delete_contact">Delete Contact</string>
+    <string name="back_button">Back</string>
+    <string name="image">Photo</string>
+    <string name="phone_call">Call</string>
+    <string name="save">Save</string>
+
+</resources>

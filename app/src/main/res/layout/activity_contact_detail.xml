@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactDetail"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:contentDescription="@string/back_button"
+            android:background="?attr/selectableItemBackground"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="#EAFFEB"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_person_photo"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            android:contentDescription="@string/image"/>
+
+        <TextView
+            android:id="@+id/contact_person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/call_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/my_number"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="32sp"
+                android:layout_marginLeft="32dp"
+                android:src="@drawable/ic_phone_black_24dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/phone_call"/>
+
+            <ImageView
+                android:id="@+id/person_contact_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:src="@drawable/ic_message_black_24dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/message"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/whatsapp"
+                android:layout_gravity="left"
+                android:contentDescription="@string/message"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/whatsapp"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/whatsapp_message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/message"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:paddingLeft="0dp"
+                android:paddingStart="0dp"
+                android:paddingRight="16dp"
+                android:paddingEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/whatsapp_message"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/my_number"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voice_call"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:paddingLeft="0dp"
+                android:paddingStart="0dp"
+                android:paddingRight="16dp"
+                android:paddingEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/whatsapp_voice_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/my_number"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/video_call"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:paddingLeft="0dp"
+                android:paddingStart="0dp"
+                android:paddingRight="16dp"
+                android:paddingEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/whatsapp_video_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/my_number"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/share_contact"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_contact"
+            android:textColor="@color/colorRed"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/delete_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/delete_contact"/>
+
+    </LinearLayout>
+
+</LinearLayout>
